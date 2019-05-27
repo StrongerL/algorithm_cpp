@@ -3,6 +3,8 @@
 #include <bitset>
 using namespace std;
 
+int global[5];
+
 void print(int nums[], int n) {
     for (int i = 0; i < n; i++) {
         cout << nums[i] << " "; 
@@ -33,4 +35,18 @@ int main() {
     print(nums, 5);
     // 输出一个数的二进制表示，需要<bitset>库
     cout << (bitset<31>)-1 <<endl;
+    cout << endl << endl;
+
+
+    cout << "全局变量默认为0，局部变量默认值不确定" << endl;
+    int local[5];
+    for (int i = 0; i < 5; i++) {
+        cout << global[i] << " ";
+    }
+    cout << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << local[i] << " ";
+    }
+
+
 }
