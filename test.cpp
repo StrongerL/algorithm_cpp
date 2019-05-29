@@ -22,27 +22,5 @@ int eg(int num) {
 }
 
 int main() {
-
-    for (int i = 2; i <= 60; i++) {
-        int tmp = eg(i);
-        if (tmp == 1)
-            e[j++] = i;
-        else if (tmp == -1)
-            g[k++] = i;
-    }
-
-    // Êä³ö
-    cout << "E: ";
-    for (int i = 0; i < j; i++) {
-        cout << e[i];
-        if (i != j - 1)
-            cout << " ";
-    }
-    cout << endl;
-    cout << "G: ";
-    for (int i = 0; i < k; i++) {
-        cout << g[i];
-        if (i != k - 1)
-            cout << " ";
-    }
+    cout << LONG_LONG_MAX << endl;
 }
