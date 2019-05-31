@@ -2,3 +2,4 @@
 *.exe
 .git
 test.cpp
+tmp.cpp
