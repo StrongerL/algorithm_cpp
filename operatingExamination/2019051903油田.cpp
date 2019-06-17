@@ -76,7 +76,7 @@ bool validate(int i, int j) {
 
 // 以油田i行j列开始向四周探索油田
 void bfs(int i, int j) {
-    vis[i][j] = 1;
+    // vis[i][j] = 1;
     queue< pair<int, int> > q;
     q.push(make_pair(i, j));
     pair<int, int> p;
@@ -84,11 +84,14 @@ void bfs(int i, int j) {
     while (!q.empty()) {
         p = q.front();
         q.pop();
+
+        vis[p.first][p.second] = 1;
+
         for (int i = 0; i < 8; i++) {
             int x = p.first + d[i][0];
             int y = p.second + d[i][1];
             if (validate(x, y) && !vis[x][y]) {
-                vis[x][y] = 1;
+                // vis[x][y] = 1;
                 // 如果该位置也是油田，加入队列继续探索
                 if (oil[x][y] == '@') {
                     q.push(make_pair(x, y));
@@ -120,7 +123,7 @@ int main() {
                     count++;
                 }
                 // 已访问
-                vis[i][j] = 1;
+                // vis[i][j] = 1;
             }
         }
         cout << count << endl;

@@ -88,12 +88,13 @@ bool validate(State s) {
 int bfs(int i, int j) { 
     State cur, next;
     priority_queue<State> q;
-    vis[i][j] = 1;
     cur = State(i, j, 0);
     q.push(cur);
     while (!q.empty()) {
         cur = q.top();
         q.pop();
+        vis[cur.i][cur.j] = 1;
+
         for (int i = 0; i < 4; i++) {
             next.i = cur.i + d[i][0];
             next.j = cur.j + d[i][1];

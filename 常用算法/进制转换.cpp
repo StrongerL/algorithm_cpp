@@ -34,7 +34,7 @@ int conversion(int in[], int out[], int n, int x, int y) {
             remainder = dividend % y;
         }
         out[size++] = remainder;
-        // 下一次除法开始的位置
+        // 去除商前面所有的0
         while (in[i] == 0) i++;
     }
     return size;
@@ -55,7 +55,7 @@ int main() {
         // 10进制转换为2进制
         int size = conversion(in, out, n, 10, 2);
 
-        // 输出
+        // 输出，需要逆序输出
         for (int i = size - 1; i >= 0; i--) {
             cout << out[i];
         }
