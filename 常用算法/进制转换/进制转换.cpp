@@ -35,7 +35,7 @@ int conversion(int in[], int out[], int n, int x, int y) {
         }
         out[size++] = remainder;
         // 去除商前面所有的0
-        while (in[i] == 0) i++;
+        while (in[i] == 0 && i < n) i++;
     }
     return size;
 }
