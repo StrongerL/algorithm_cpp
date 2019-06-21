@@ -5,8 +5,7 @@ using namespace std;
 
 /*
     不包含头文件string依旧可用，为什么
-
- */
+*/
 
 
 
@@ -88,9 +87,20 @@ void testBase() {
 
 
 void testFunctions() {
-    
-    
+    string s = "123";
 
+    // 字符串长度
+    cout << s.length() << endl;
+    cout << s.size() << endl;
+
+    // 返回指定位置的字符
+    cout << s.at(0) << endl;
+
+
+
+
+
+    cout << endl;
 }
 
 
@@ -98,6 +108,8 @@ int main() {
 
     // testBase();
 
-    testInput();
+    // testInput();
+
+    testFunctions();
 
 }
