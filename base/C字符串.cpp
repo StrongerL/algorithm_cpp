@@ -78,7 +78,7 @@ void functions1() {
     cout << s << endl;
 }
 
-// 在头文件<cstdlib>中，但是好像并不需要？？？
+
 void functions2() {
 
     // 返回字符串的int值，直到遇到不是数字的字符或者到了字符串尾部，第一个字符不是数字返回0

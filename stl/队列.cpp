@@ -94,7 +94,7 @@ void learnPriorityQueue() {
     // 在结构体中重载 < 运算符
     priority_queue<Node2> p4;
     // 使用其他比较方式
-    priority_queue<Node2, vector<Node2>, cmp> p5;
+    priority_queue<Node2, vector<Node2> > p5;
 
     cout << "priority_queue<int> p1，从大到小" << endl;
     p1.push(1);
