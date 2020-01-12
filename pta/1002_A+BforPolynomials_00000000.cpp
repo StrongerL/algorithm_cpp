@@ -2,9 +2,15 @@
 来源
 https://pintia.cn/problem-sets/994805342720868352/problems/994805526272000000
 
+
+题目
+1002 A+B for Polynomials (25分)
+
+
 思路
 相同指数的系数相加即可，注意输出需要保留一位小数
 */
+
 
 #include <iostream>
 #include <iomanip>
